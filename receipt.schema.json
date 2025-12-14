@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AltmanAI Public Receipt",
+  "type": "object",
+  "required": [
+    "receipt_version",
+    "impact_record_id",
+    "timestamp_utc",
+    "artifact",
+    "receipt_sha256"
+  ],
+  "properties": {
+    "receipt_version": {
+      "type": "string",
+      "enum": [
+        "0.1"
+      ]
+    },
+    "impact_record_id": {
+      "type": "string"
+    },
+    "timestamp_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "artifact": {
+      "type": "object",
+      "required": [
+        "path",
+        "sha256"
+      ],
+      "properties": {
+        "path": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "receipt_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,38 @@
+{
+  "id": "AFG-PAIHI-2025-12-13-EXAMPLE-0001",
+  "title": "Repo scaffold initialized for altmanai-masterplan",
+  "timestamp_utc": "2025-12-13T05:00:00Z",
+  "summary": "Initialized the public execution hub: governance, roadmap, PAIHI public spec, and verification tooling. This is the foundation for weekly shipping and verifiable impact.",
+  "people": [
+    {
+      "name": "Blake Hunter Altman",
+      "role": "Founder/CEO (human)"
+    },
+    {
+      "name": "AltmanAI ChatGPT Model",
+      "role": "Co-architect (AI)"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "paihi/examples/example_artifact.txt",
+      "sha256": "55fc5ba44f980fed19ec5df096aa86da7de8b446403fa6dac23fdf5ec1cfaf0b",
+      "type": "doc",
+      "description": "Example artifact used to demonstrate hashing and receipt verification."
+    }
+  ],
+  "metrics": {
+    "repo_initialized": true
+  },
+  "risk_review": {
+    "human_dignity": "PASS",
+    "privacy": "PASS",
+    "security": "PASS",
+    "notes": "Public-safe example. No sensitive info."
+  },
+  "tags": [
+    "foundation",
+    "paihi",
+    "public"
+  ]
+}

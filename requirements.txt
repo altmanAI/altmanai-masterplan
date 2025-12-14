@@ -1,0 +1,2 @@
+# Optional dependencies (Python 3.10+ recommended)
+# This repo's tools only use the standard library today.

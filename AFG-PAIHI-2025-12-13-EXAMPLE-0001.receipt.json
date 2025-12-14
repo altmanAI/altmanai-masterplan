@@ -1,0 +1,11 @@
+{
+  "receipt_version": "0.1",
+  "impact_record_id": "AFG-PAIHI-2025-12-13-EXAMPLE-0001",
+  "timestamp_utc": "2025-12-13T05:00:00Z",
+  "artifact": {
+    "path": "paihi/examples/example_artifact.txt",
+    "sha256": "55fc5ba44f980fed19ec5df096aa86da7de8b446403fa6dac23fdf5ec1cfaf0b"
+  },
+  "receipt_sha256": "666fad4d6e6202602528873af6b35497fc1e54508bf8d82e892361b255da9ca4",
+  "notes": "receipt_sha256 = sha256(receipt_version|impact_record_id|timestamp_utc|artifact.path|artifact.sha256)"
+}
