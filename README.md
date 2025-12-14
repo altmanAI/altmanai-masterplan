@@ -52,4 +52,4 @@ See: `CODE_OF_CONDUCT.md` and `docs/PRINCIPLES.md`.
 
 ---
 
-Â© Altman Family Group, LLC. All rights reserved. â¢
+© Altman Family Group, LLC. All rights reserved.
