@@ -1,70 +1,133 @@
 # AltmanAI Masterplan
 
-**The public execution operating system for AltmanAI.**
+**The public execution map for AltmanAI.**
 
-Humanity leads. Intelligence follows.
+> Humanity leads. Intelligence follows.
 
-AltmanAI (by Altman Family Group LLC) is a Pittsburgh, PA human-first AI R&D company building practical AI products and the public proof infrastructure behind them. This repo is the map: what we're building, why, in what order, and how every other repo in the ecosystem connects.
+AltmanAI, by Altman Family Group LLC, is a Pittsburgh-based human-first AI research and development company building practical AI products and the proof infrastructure behind them. This repository explains what we are building, what is working now, what is still in development, and how the public repositories connect.
 
 ---
 
 ## Start Here
 
-| You are a... | Go to |
+| You are a... | Start with |
 |---|---|
-| **Developer** wanting to build with our tools | [`PAIHI-Portables`](https://github.com/altmanAI/PAIHI-Portables) — generate/verify Proof-of-AI-Human-Impact bundles |
-| **Partner or investor** evaluating AltmanAI | [`altmanai-master-ledger`](https://github.com/altmanAI/altmanai-master-ledger) — verifiable milestones and proof registry |
-| **Press** covering the company | [`altmanai-public-hub`](https://github.com/altmanAI/altmanai-public-hub) — mission, positioning, press kit |
-| **User** of our products | [DailyPilot](https://www.altmanai.tech) — the flagship product, live now |
-| **Contributor** to the org standards | [`.github`](https://github.com/altmanAI/.github) — governance, templates, contribution rules |
+| **Developer** evaluating AltmanAI tooling | [`altmanai-sdk`](https://github.com/altmanAI/altmanai-sdk) — schemas, receipt generation, artifact verification, event hooks, and Python/TypeScript foundations |
+| **Builder** studying human-first AI architecture | [`human-first-ai`](https://github.com/altmanAI/human-first-ai) — runnable P.A.I.H.I. reference implementation with tests and human checkpoints |
+| **Partner or investor** evaluating execution | [`altmanai-master-ledger`](https://github.com/altmanAI/altmanai-master-ledger) — public milestones, receipts, and registry records |
+| **Press or community member** learning about the company | [`altmanai-public-hub`](https://github.com/altmanAI/altmanai-public-hub) — company positioning, mission, and public context |
+| **User** exploring AltmanAI products | [AltmanAI.tech](https://www.altmanai.tech) — products, services, and current public experiences |
+| **Contributor** reviewing organization standards | [`.github`](https://github.com/altmanAI/.github) — governance, issue templates, contribution rules, and account-wide audit material |
 
 ---
 
 ## What AltmanAI Is Building
 
-A practical AI product line, backed by a public, verifiable proof layer — not just claims about "responsible AI," but inspectable artifacts anyone can check.
+AltmanAI is developing a practical human-first AI product line backed by inspectable technical and governance infrastructure.
 
-**Core standard:** PAIHI — Proof, Alignment, Integrity, Humanity, Impact. Every product ships with receipts.
+**Core framework:** **P.A.I.H.I. — Proof, Alignment, Integrity, Humanity, Impact.**
 
-## Operating Model
+P.A.I.H.I. is expressed across three distinct public layers:
 
-**Code. Measure. Prove. Scale.**
+1. **Framework and governance** — [`paihi-framework`](https://github.com/altmanAI/paihi-framework)
+2. **Working reference architecture** — [`human-first-ai`](https://github.com/altmanAI/human-first-ai)
+3. **Developer integration tooling** — [`altmanai-sdk`](https://github.com/altmanAI/altmanai-sdk)
 
-1. **Code** — build the product (DailyPilot, and the pipeline behind it: Sophia, EvidenceOS, ReleaseShield)
-2. **Measure** — every meaningful build/decision generates a Save-Receipt JSON with a SHA-256 hash
-3. **Prove** — receipts land in the Master Ledger, a public, auditable registry
-4. **Scale** — AINet coordinates artifacts/ledgers/agents into one connected system; Impact Explorer makes it browsable by anyone
-
-## Repo Map
-
-| Repo | Role |
-|---|---|
-| [`.github`](https://github.com/altmanAI/.github) | Org-level governance, templates, contribution standards |
-| [`altmanai-masterplan`](https://github.com/altmanAI/altmanai-masterplan) | This repo — roadmap, architecture, start-here routing |
-| [`PAIHI-Portables`](https://github.com/altmanAI/PAIHI-Portables) | CLI toolkit to generate/verify PAIHI proof bundles |
-| [`altmanai-master-ledger`](https://github.com/altmanAI/altmanai-master-ledger) | Public index of PAIHI records, receipts, registry IDs |
-| [`AINet`](https://github.com/altmanAI/AINet) | Ecosystem architecture layer connecting artifacts, ledgers, agents |
-| [`AltmanAI-Impact-Explorer`](https://github.com/altmanAI/AltmanAI-Impact-Explorer) | Public viewer for AINet + PAIHI Registry |
-| [`DailyPilot-Engine`](https://github.com/altmanAI/DailyPilot-Engine) | Prioritization engine behind the DailyPilot product |
-| [`canon-charter-v1`](https://github.com/altmanAI/canon-charter-v1) | Minted, canonical governance charter (frozen; amend via addendum only) |
-| [`releaseshield-by-altmanai`](https://github.com/altmanAI/releaseshield-by-altmanai) | Release integrity tracking: builds, approvals, hashes, changelogs |
-| [`altmanai-sdk`](https://github.com/altmanAI/altmanai-sdk) | Developer toolkit — schemas, receipt generation, AINet hooks |
-| [`altmanai-public-hub`](https://github.com/altmanAI/altmanai-public-hub) | Mission, positioning, press-facing entry point |
-
-Other repos in the account are R&D prototypes, governance artifacts, or historical/experimental work — see [`.github/GITHUB_AUDIT.md`](https://github.com/altmanAI/.github) for the full account audit and status of each.
-
-## Roadmap
-
-**Now (live):** DailyPilot v2.0 shipped June 25, 2026 at [www.altmanai.tech](https://www.altmanai.tech). Free Pilot / Pro Pilot tiers active.
-
-**Next:** Proof Ledger public-facing surface on the DailyPilot Trust Center; v0.1 release path for `PAIHI-Portables`, `DailyPilot-Engine`, `altmanai-master-ledger`, `AINet`, and `Impact Explorer`.
-
-**Later:** Sophia (human-first AI companion), EvidenceOS (truth-verified AI intelligence), ReleaseShield productionization. Pre-seed/seed fundraising, CMU and Pittsburgh-ecosystem partnerships.
-
-## Governance
-
-Founding/canonical artifacts (the Charter, minted PAIHI records, registry hashes) are frozen and amended only through addendum, RFC, or versioned amendment files — never rewritten in place. Major governance or identity-level changes require explicit founder approval ("All Clear for Impact") before merging to `main`. See [`.github/GOVERNANCE.md`](https://github.com/altmanAI/.github) for the full policy.
+This separation is intentional: the framework defines the standard, the reference implementation demonstrates it in code, and the SDK provides reusable integration primitives.
 
 ---
 
-**AltmanAI** — Pittsburgh, PA · Founded by Blake Hunter Altman · [www.altmanai.tech](https://www.altmanai.tech)
+## Operating Model
+
+**Build. Measure. Prove. Scale.**
+
+1. **Build** — create useful products and working technical systems.
+2. **Measure** — capture meaningful actions, decisions, and outcomes in structured records.
+3. **Prove** — verify artifacts with hashes, schemas, manifests, tests, and human review.
+4. **Scale** — turn proven patterns into reusable infrastructure, products, partnerships, and public documentation.
+
+AltmanAI does not treat a roadmap claim as equivalent to shipped functionality. Repositories should clearly identify whether they are **working**, **reference**, **foundation**, **experimental**, **historical**, or **planned**.
+
+---
+
+## Active Portfolio Map
+
+| Repository | Role | Current positioning |
+|---|---|---|
+| [`.github`](https://github.com/altmanAI/.github) | Organization profile, governance, templates, and audit records | Active governance layer |
+| [`altmanai-masterplan`](https://github.com/altmanAI/altmanai-masterplan) | Public execution map and repository router | Active |
+| [`paihi-framework`](https://github.com/altmanAI/paihi-framework) | Canonical P.A.I.H.I. definitions, governance, and implementation guidance | Active development |
+| [`human-first-ai`](https://github.com/altmanAI/human-first-ai) | Runnable P.A.I.H.I. reference architecture and scoring implementation | Working reference implementation |
+| [`altmanai-sdk`](https://github.com/altmanAI/altmanai-sdk) | Cross-language developer toolkit for receipts, verification, schemas, and events | Initial public foundation |
+| [`DailyPilot-Engine`](https://github.com/altmanAI/DailyPilot-Engine) | Explainable prioritization engine for DailyPilot | Working reference implementation; production integration in progress |
+| [`releaseshield-by-altmanai`](https://github.com/altmanAI/releaseshield-by-altmanai) | Human-reviewed release integrity and proof-reporting system | v0.1 product development |
+| [`AltmanAI-Impact-Explorer`](https://github.com/altmanAI/AltmanAI-Impact-Explorer) | Public viewer for proof and registry artifacts | Early full-stack implementation |
+| [`altmanai-master-ledger`](https://github.com/altmanAI/altmanai-master-ledger) | Public index of milestones, receipts, registry records, and proof artifacts | Active proof layer |
+| [`canon-charter-v1`](https://github.com/altmanAI/canon-charter-v1) | Minted, versioned governance charter with manifest and verification tooling | Frozen canonical artifact |
+| [`altmanai-alt-seal`](https://github.com/altmanAI/altmanai-alt-seal) | Trust-mark policy, assets, hashes, and local browser verifier | Governance and verification asset |
+| [`docs`](https://github.com/altmanAI/docs) | DailyPilot documentation source | Active documentation |
+| [`altmanai-public-hub`](https://github.com/altmanAI/altmanai-public-hub) | Public company and ecosystem introduction | Active public entry point |
+
+### Historical or consolidated work
+
+- [`PAIHI-Portables`](https://github.com/altmanAI/PAIHI-Portables) is archived and consolidated into [`altmanai-sdk`](https://github.com/altmanAI/altmanai-sdk).
+- Older sovereign, agent, or operating-system concepts should be treated as historical R&D unless a repository contains current working code, tests, documentation, and a maintained release path.
+
+---
+
+## Current Priorities
+
+### 1. Consolidate P.A.I.H.I.
+
+Establish one coherent standard across the framework, reference implementation, SDK, products, and proof ledger without duplicating terminology or functionality.
+
+### 2. Productize ReleaseShield
+
+Move ReleaseShield from a strong concept into a tested CLI and GitHub Action with fixtures, deterministic reports, human authorization, and proof output.
+
+### 3. Strengthen release engineering
+
+For core code repositories, standardize:
+
+- automated tests
+- CI on pull requests
+- dependency and secret scanning
+- explicit licenses
+- semantic versioning
+- changelogs and release notes
+- reproducible examples
+
+### 4. Improve the public GitHub funnel
+
+Every core repository should clearly answer:
+
+- What is this?
+- Does it work now?
+- How do I run or verify it?
+- How does it connect to AltmanAI?
+- What is planned next?
+
+### 5. Build from Pittsburgh with measurable value
+
+AltmanAI’s goal is to become a credible human-first AI company from Pittsburgh by showing working systems, responsible engineering, useful products, transparent limitations, and proof of execution.
+
+---
+
+## Governance
+
+Minted and canonical artifacts are not casually rewritten. Improvements to frozen artifacts should use a versioned addendum, amendment, RFC, or successor release.
+
+Public claims must remain proportional to available evidence. Ambitious vision is welcome; shipped functionality, tests, verification, and documented limitations must remain distinguishable from future plans.
+
+Major identity, governance, or canonical changes require explicit founder authorization before merge.
+
+---
+
+## Company
+
+**AltmanAI** by Altman Family Group LLC  
+**Founder & CEO:** Blake Hunter Altman  
+**Location:** Pittsburgh, Pennsylvania  
+**Website:** [www.altmanai.tech](https://www.altmanai.tech)
+
+**Humanity leads. Intelligence follows.**
